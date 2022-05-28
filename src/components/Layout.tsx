@@ -36,6 +36,10 @@ const Layout = () => {
           {" "}
           React-hook-form
         </NavLink>
+        <NavLink to="/react-query" className={getActiveLink}>
+          {" "}
+          React-Query
+        </NavLink>
         <button onClick={() => dispatch(logout())}>Выйти </button>
       </header>
 

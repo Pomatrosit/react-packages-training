@@ -8,6 +8,7 @@ import ReduxToolkit from "./pages/ReduxToolkit";
 import LoginPage from "./pages/LoginPage";
 import { useAppSelector } from "./hooks/redux";
 import ReactHookForm from "./pages/ReactHookForm";
+import ReactQueryPage from "./pages/ReactQuery";
 
 function App() {
   const { auth } = useAppSelector((state) => state.auth);
@@ -22,6 +23,7 @@ function App() {
             <Route path="/axios" element={<AxiosPage />} />
             <Route path="/redux-toolkit" element={<ReduxToolkit />} />
             <Route path="/react-hook-form" element={<ReactHookForm />} />
+            <Route path="/react-query" element={<ReactQueryPage />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>
