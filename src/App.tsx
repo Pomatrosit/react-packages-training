@@ -7,6 +7,7 @@ import AxiosPage from "./pages/AxiosPage";
 import ReduxToolkit from "./pages/ReduxToolkit";
 import LoginPage from "./pages/LoginPage";
 import { useAppSelector } from "./hooks/redux";
+import ReactHookForm from "./pages/ReactHookForm";
 
 function App() {
   const { auth } = useAppSelector((state) => state.auth);
@@ -20,6 +21,7 @@ function App() {
             <Route path="/minified-formik" element={<MinifiedFormikPage />} />
             <Route path="/axios" element={<AxiosPage />} />
             <Route path="/redux-toolkit" element={<ReduxToolkit />} />
+            <Route path="/react-hook-form" element={<ReactHookForm />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Route>
         </Routes>

@@ -32,6 +32,10 @@ const Layout = () => {
           {" "}
           Redux Toolkit
         </NavLink>
+        <NavLink to="/react-hook-form" className={getActiveLink}>
+          {" "}
+          React-hook-form
+        </NavLink>
         <button onClick={() => dispatch(logout())}>Выйти </button>
       </header>
 
