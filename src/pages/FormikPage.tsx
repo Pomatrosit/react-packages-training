@@ -23,6 +23,7 @@ const validationSchema = Yup.object({
 const FormikPage = () => {
   const onSubmit = (values: IValues): void => {
     console.log(values);
+    console.log(1);
   };
 
   const formik = useFormik({
