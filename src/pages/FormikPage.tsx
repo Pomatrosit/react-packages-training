@@ -23,6 +23,7 @@ const validationSchema = Yup.object({
 const FormikPage = () => {
   const onSubmit = (values: IValues): void => {
     console.log(values);
+    console.log('remote');
   };
 
   const formik = useFormik({
